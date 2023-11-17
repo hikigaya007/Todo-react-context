@@ -2,10 +2,15 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',sans-serif;
+    
 }
 .customclass{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.custombg{
+    background-color: rgb(214, 214, 10)
 }
