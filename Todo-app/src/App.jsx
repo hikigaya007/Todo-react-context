@@ -44,8 +44,9 @@ function App() {
 
   return (
     <TodoProvider value={{todos , addTodo , updateTodo , deleteTodo, toggleComplete}}>
-      <div style={{width:'100%',height:'100vh'}}>
-        <div className="w-full h-full bg-amber-200 customclass">
+      <div style={{width:'100%',height:'100vh'}} className="bg-amber-200">
+        <div className="w-full h-auto customclass py-7">
+          <p className="font-bold text-lg">Manage Your Todos...</p>
           <Form/>
           {todos.map((todo) => (
             <div key={todo.id} className="w-3/5 m-1">
