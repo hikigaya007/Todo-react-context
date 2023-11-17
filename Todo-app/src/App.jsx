@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Form from "./components/form"
 import TodoList from "./components/TodoList"
 import { TodoProvider } from "./context"
+import './App.css'
 
 function App() {
 
@@ -43,11 +44,11 @@ function App() {
 
   return (
     <TodoProvider value={{todos , addTodo , updateTodo , deleteTodo, toggleComplete}}>
-      <div className="w-full h-full">
-        <div className="w-full h-full bg-slate-400 flex-col justify-center">
+      <div style={{width:'100%',height:'100vh'}}>
+        <div className="w-full h-full bg-amber-200 customclass">
           <Form/>
           {todos.map((todo) => (
-            <div key={todo.id} className="w-full">
+            <div key={todo.id} className="w-3/5 m-1">
                 <TodoList todo={todo}/>
 
             </div>

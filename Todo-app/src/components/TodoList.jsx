@@ -22,8 +22,8 @@ function TodoList({todo}) {
 
   return (
     <div
-          className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
-              todo.isCompleted ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
+          className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-white ${
+              todo.isCompleted ? "bg-[#000000]" : "bg-[#9b4dd6]"
           }`}
       >
           <input
